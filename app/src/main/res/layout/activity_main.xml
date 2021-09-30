@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/holo_orange_dark"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="161dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="118dp"
+        android:adjustViewBounds="false" />
+
+    <EditText
+        android:id="@+id/editTextHost"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="20dp"
+        android:autoText="false"
+        android:fadingEdge="none"
+        android:fontFamily="@font/rambla"
+        android:inputType="text"
+        android:text="Nome ou IP do Servidor"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorLink="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="367dp"
+        android:layout_below="@+id/editTextHost"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="20dp"
+        android:autoText="false"
+        android:fadingEdge="none"
+        android:fontFamily="@font/rambla"
+        android:inputType="text"
+        android:text="Usuario"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorLink="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUsuario"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/rambla"
+        android:inputType="textPassword"
+        android:password="true"
+        android:text="Senha"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="386dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="311dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="validar"
+        android:shadowColor="@color/holo_orange_dark"
+        android:text="Entrar"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@color/holo_orange_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvCadastro2"
+        android:layout_width="321dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="417dp"
+        android:clickable="true"
+        android:text="Não tem usuario cadastrado ?  Solicite o cadastramento ao responsável pelo sistema"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorLink="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

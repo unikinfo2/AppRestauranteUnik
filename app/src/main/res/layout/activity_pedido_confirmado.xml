@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PedidoConfirmadoActivity">
+
+    <TextView
+        android:id="@+id/lblCartoes"
+        android:layout_width="402dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="46dp"
+        android:text="Aceitamos Todos os Cartões"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblObs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="198dp"
+        android:text="O Pagamento sera realizado no momento da entrega"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <TextView
+        android:id="@+id/tvPedidoConfirmado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="407dp"
+        android:text="Seu Pedido foi Confirmado!"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvNumeroPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="256dp"
+        android:text="#"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="347dp"
+        android:foregroundGravity="center_horizontal"
+        android:onClick="enviarEmail"
+        android:text="Renviar email de confirmação" />
+
+    <Button
+        android:id="@+id/btnNovoPedido"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="297dp"
+        android:foregroundGravity="center_horizontal"
+        android:onClick="novoPedido"
+        android:text="Desejo fazer outro Pedido" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="305dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
+        app:srcCompat="@mipmap/cartoes"
+        android:src="@mipmap/cartoes"
+        tools:src="@mipmap/cartoes"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="472dp"
+        android:src="@mipmap/check"
+        app:srcCompat="@mipmap/check"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="35dp"
+        tools:src="@mipmap/check" />
+</RelativeLayout>

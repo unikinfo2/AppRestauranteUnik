@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0048FF</color>
+    <color name="colorPrimaryDark">#A63EDFFB</color>
+    <color name="colorAccent">#76fffafa</color>
+    <color name="colorBackSearch">#6B3EAFFB</color>
+    <color name="holo_orange_dark">#27007BFF</color>
+    <color name="cardview_shadow_start_color">#27007BFF</color>
+	<color name="cardview_dark_background">#FF424242</color>
+</resources>

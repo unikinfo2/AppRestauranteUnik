@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProdutoSelecionadoActivity">
+
+    <Button
+        android:id="@+id/buttonLess"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="14dp"
+        android:background="@android:color/background_light"
+        android:text="-"
+        android:onClick="diminuiQuantidade"
+        android:textColor="@color/colorPrimary"
+        android:textSize="42sp" />
+
+    <ImageView
+        android:id="@+id/ivProduto"
+        android:layout_width="384dp"
+        android:layout_height="144dp"
+        android:src="@mipmap/food"
+        app:srcCompat="@mipmap/food"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:src="@mipmap/food" />
+
+    <EditText
+        android:id="@+id/tvTitulo"
+        android:layout_width="383dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/ivProduto"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/rambla"
+        android:text="Produto Titulo"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="21sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <EditText
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="start"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginBottom="227dp"
+        android:text="Descricao Produto"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tvPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="290dp"
+        android:background="@color/colorAccent"
+        android:text="R$ 0.00"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <ListView
+        android:id="@+id/listaAdicionais"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="73dp"
+        android:background="@android:color/background_light"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="332dp"></ListView>
+
+    <TextView
+        android:id="@+id/tvAdicionais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="321dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="162dp"
+        android:background="@color/colorAccent"
+        android:text="Adicionais"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/btnAdicionar"
+        android:layout_width="208dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="456dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_orange_dark"
+        android:fontFamily="sans-serif-condensed"
+        android:shadowColor="@android:color/holo_orange_dark"
+        android:text="Adicionar          R$ 0.00"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/holo_orange_dark"
+        android:onClick="adicionarCarrinho"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <Button
+        android:id="@+id/buttonMore"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/background_light"
+        android:text="+"
+        android:onClick="aumentaQuantidade"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/tvQuantidade"
+        android:layout_width="46dp"
+        android:layout_height="52dp"
+        android:layout_alignTop="@+id/buttonMore"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="-2dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+</RelativeLayout>

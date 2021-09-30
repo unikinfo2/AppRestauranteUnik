@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="100dp"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="horizontal"
+tools:context=".ActivityListaProdutoPersonalizada">
+
+<ImageView
+    android:id="@+id/imagemProduto"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    app:srcCompat="@mipmap/ic_produtosemfoto_round"
+    tools:src="@mipmap/ic_produtosemfoto_round" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/desc1Produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Titulo"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/desc2Produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="descriçao"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/precoProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="preco"
+        android:textSize="15dp" />
+</LinearLayout>
+
+</LinearLayout>
